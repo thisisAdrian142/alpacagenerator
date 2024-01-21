@@ -1,11 +1,31 @@
 .flex-container {
-    display: flex;
-    /* width: 50vw; */
-    margin: 10% auto 0 auto;
-    background-color: orange;
-    justify-content: space-between;
+    background-color: blanchedalmond;
 }
 
-.box {
-    width: 45vw;
+.flex-container {
+    display: flex;   
+    width: 40vw;
+    margin: 10% auto 0 auto;
+    border-radius: 5%;
+    box-shadow: 10px 10px 15px hsl(251, 13%, 67%);
 }
+
+/** right box accessories */
+.accessories-item {
+    display: flex;
+    flex-flow: row wrap;
+    column-gap: 50px;
+}
+
+/** right box style*/
+.style-item {
+    display: flex;
+    flex-flow: row wrap;
+    column-gap: 50px;
+}
+
+/** divide two boxes evenly */
+.left-box {
+    padding: 5rem;
+}
+
