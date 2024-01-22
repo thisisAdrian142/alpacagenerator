@@ -2,115 +2,52 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Alpaca Generator</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Alpaca Image Generator</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/5034295430.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/html2canvas.js" defer></script>
+    <script src="js/main.js" defer></script>
   </head>
   <body>
-    <div class="main-container">
-      <div class="flex-container">
-        <div class="left-box">
-          <header><h1>Alpaca generator</h1></header>
-          <div class="random-box">
-            <div>
-              <strong>🔀🔀 Random</strong>
-            </div>
+    <div class="container">
+      <h1 class="text-lv1">ALPACA GENERATOR</h1>
+      <div class="side-container">
+        <!-- todo: first box -->
+        <aside class="side-content">
+          <div id="image-container">
+            <!-- Images -->
           </div>
-          <div class="download-box">
-            <div>
-              <strong>⬇️⬇️ Download</strong>
-            </div>
+          <div class="btn-wrapper">
+            <a href="#random" class="btn" id="btn_random"
+              ><i class="fa-solid fa-shuffle"></i>Random</a
+            >
+            <a href="#download" class="btn" id="btn_download"
+              ><i class="fa-solid fa-download"></i>Download</a
+            >
           </div>
-        </div>
-        <div class="right-box">
-          <div class="right-box-flex">
-            <div class="accessories-box">
-              <h2>Accessorize The Alpaca's</h2>
-              <div class="accessories-item">
-                <div class="hair-box">
-                  <div id="accesory-buttons">
-                    <button data-category="hair">Hair</button>
-                  </div>
-                  <div id="options-container"></div>
-                </div>
-                <div class="ears-box">
-                  <div id="accesory-buttons">
-                    <button data-category="ear">Ears</button>
-                  </div>
-                </div>
-                <div class="eyes-box">
-                  <div id="accesory-buttons">
-                    <button data-category="eye">Eyes</button>
-                  </div>
-                </div>
-                <div class="mouth-box">
-                  <div id="accesory-buttons">
-                    <button data-category="mouth">Mouth</button>
-                  </div>
-                </div>
-                <div class="neck-box">
-                  <div id="accesory-buttons">
-                    <button data-category="neck">Neck</button>
-                  </div>
-                </div>
-                <div class="leg-box">
-                  <div id="accesory-buttons">
-                    <button data-category="leg">Leg</button>
-                  </div>
-                </div>
-                <div class="accessories-box">
-                  <div id="accesory-buttons">
-                    <button data-category="accessory">Accesssories</button>
-                  </div>
-                </div>
-                <div class="background-box">
-                  <div id="accesory-buttons">
-                    <button data-category="background">Backgrounds</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="style-box">
-              <h2>Style</h2>
-              <div class="style-item">
-                <div class="default-box">
-                  <div>
-                    <p>Default</p>
-                  </div>
-                </div>
-                <div class="curls-box">
-                  <div>
-                    <p>Curls</p>
-                  </div>
-                </div>
-                <div class="short-box">
-                  <div>
-                    <p>Short</p>
-                  </div>
-                </div>
-                <div class="bang-box">
-                  <div>
-                    <p>Bang</p>
-                  </div>
-                </div>
-                <div class="elegant-box">
-                  <div>
-                    <p>Elegant</p>
-                  </div>
-                </div>
-                <div class="quiff-box">
-                  <div>
-                    <p>Quiff</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+        </aside>
+
+        <!-- todo: second box -->
+        <aside class="side-content">
+          <h2 class="text-lv2">ACESSORIZE THE ALPACA'S</h2>
+          <div class="btn-container" id="btns-acessorize">
+            <!-- Dynamic buttons -->
           </div>
-        </div>
+
+          <h2 class="text-lv2">STYLE</h2>
+          <div class="btn-container" id="btns-style">
+            <!-- Dynamic buttons too -->
+          </div>
+        </aside>
       </div>
     </div>
-
-    <link rel="stylesheet" href="script.js" />
   </body>
 </html>
